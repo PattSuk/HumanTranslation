@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  // border: 1px dashed lightgrey;
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+  background: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}

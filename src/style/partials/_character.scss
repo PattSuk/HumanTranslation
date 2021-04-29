@@ -1,0 +1,115 @@
+.page {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 0 2.5rem;
+  }
+
+  @include desktop {
+    padding: 1rem 12.5vw;
+  }
+
+  &__header {
+    color: $primary-text;
+  }
+
+  &__img {
+    width: 20rem;
+    height: 15rem;
+    @extend %circle-object;
+
+    &--yoda {
+      object-position: left;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      width: 35%;
+    }
+  }
+
+  &__label {
+    @extend %label;
+    margin: 0;
+  }
+
+  &__textarea {
+    @extend %input-text;
+    resize: none;
+    height: 5rem;
+
+    &--minion {
+      &:focus {
+        border: 1px solid $minion-color;
+      }
+    }
+
+    &--yoda {
+      &:focus {
+        border: 1px solid $yoda-border-color;
+      }
+    }
+
+    @include tablet {
+      height: 6rem;
+    }
+  }
+
+  &__submit {
+    @extend %btn;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+
+    &--minion {
+      background: $minion-color;
+    }
+
+    &--yoda {
+      background: $yoda-color;
+    }
+
+    @include tablet {
+      width: 21%;
+      margin-top: 4rem;
+      height: 4rem;
+
+      @include desktop {
+        width: 18%;
+      }
+    }
+  }
+
+  &__ans {
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid $secondary-color;
+    margin: 0;
+    background-color: $primary-text;
+    height: 5rem;
+
+    @include tablet {
+      height: 6rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+
+//$primary-color: #50C4ED;
+$primary-color: #add8e6;
+$secondary-color: grey;
+$primary-text: white;
+$minion-color: #f9dd78;
+$yoda-color: #616640;
+$yoda-border-color: #d5cfb6;
+
+$primary-font: "Bubblegum Sans", cursive;
+
+%circle-object {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+%label {
+  color: $primary-text;
+  padding: 2rem 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+%input-text {
+  font-family: $primary-font;
+  //border: 1.5px solid $text-field-border;
+  border-radius: 8px;
+  padding: 0.75rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+%btn {
+  font-family: $primary-font;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  color: $primary-text;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

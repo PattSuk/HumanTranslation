@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+.main__character-img, .page__img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page__label {
+  color: white;
+  padding: 2rem 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+.page__textarea {
+  font-family: "Bubblegum Sans", cursive;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.page__textarea:focus {
+  outline: none;
+}
+
+.page__submit {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.page__submit:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page__submit:focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bubblegum Sans", cursive;
+  background: #add8e6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 2rem 5vw;
+  }
+}
+
+.header__logo {
+  width: 10rem;
+}
+
+.main {
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding: 1rem 12.5vw;
+  }
+}
+
+.main__header {
+  color: white;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.main__character-img {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 2rem;
+}
+
+.main__character-name {
+  color: white;
+  text-align: center;
+}
+
+.page {
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page {
+    padding: 1rem 12.5vw;
+  }
+}
+
+.page__header {
+  color: white;
+}
+
+.page__img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.page__img--yoda {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .page__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+.page__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .page__display {
+    width: 35%;
+  }
+}
+
+.page__label {
+  margin: 0;
+}
+
+.page__textarea {
+  resize: none;
+  height: 5rem;
+}
+
+.page__textarea--minion:focus {
+  border: 1px solid #f9dd78;
+}
+
+.page__textarea--yoda:focus {
+  border: 1px solid #d5cfb6;
+}
+
+@media (min-width: 768px) {
+  .page__textarea {
+    height: 6rem;
+  }
+}
+
+.page__submit {
+  padding: 1rem 2.5rem;
+  margin-top: 1rem;
+}
+
+.page__submit--minion {
+  background: #f9dd78;
+}
+
+.page__submit--yoda {
+  background: #616640;
+}
+
+@media (min-width: 768px) {
+  .page__submit {
+    width: 21%;
+    margin-top: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .page__submit {
+    width: 18%;
+  }
+}
+
+.page__ans {
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px solid grey;
+  margin: 0;
+  background-color: white;
+  height: 5rem;
+}
+
+@media (min-width: 768px) {
+  .page__ans {
+    height: 6rem;
+  }
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,36 @@
+.main {
+  padding: 0 1.5rem;
+
+  @include tablet {
+    padding: 0 2.5rem;
+  }
+
+  @include desktop {
+    padding: 1rem 12.5vw;
+  }
+
+  &__header {
+    color: $primary-text;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+
+  &__character {
+    &-img {
+      width: 10rem;
+      height: 10rem;
+      @extend %circle-object;
+      margin: 0 2rem;
+    }
+
+    &-name {
+      color: $primary-text;
+      text-align: center;
+    }
+  }
+}

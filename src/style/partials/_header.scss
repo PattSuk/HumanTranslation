@@ -1,0 +1,15 @@
+.header {
+  padding: 2rem 1rem;
+
+  @include tablet {
+    padding: 2rem;
+  }
+
+  @include desktop {
+    padding: 2rem 5vw;
+  }
+
+  &__logo {
+    width: 10rem;
+  }
+}
