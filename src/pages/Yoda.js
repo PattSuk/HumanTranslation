@@ -2,7 +2,7 @@ import { useState } from 'react';
 import yoda from '../assets/baby-yoda.gif'
 
 function Yoda(props) {
-    const [ translated, setTranslated ] = useState("rya tu mew...");
+    const [ translated, setTranslated ] = useState("Your words, enter...");
 
     const newText = event => {
         event.preventDefault();

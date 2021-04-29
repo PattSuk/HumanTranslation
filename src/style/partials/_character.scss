@@ -58,6 +58,7 @@
     @extend %input-text;
     resize: none;
     height: 5rem;
+    font-size: 1rem;
 
     &--minion {
       &:focus {
