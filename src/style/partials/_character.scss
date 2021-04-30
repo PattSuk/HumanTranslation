@@ -72,6 +72,12 @@
       }
     }
 
+    &--groot {
+      &:focus {
+        border: 1px solid $groot-color;
+      }
+    }
+
     @include tablet {
       height: 6rem;
     }
@@ -88,6 +94,10 @@
 
     &--yoda {
       background: $yoda-color;
+    }
+
+    &--groot {
+      background: $groot-color;
     }
 
     @include tablet {

@@ -105,7 +105,7 @@ a {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .main__character-img {
@@ -209,6 +209,7 @@ a {
 .page__textarea {
   resize: none;
   height: 5rem;
+  font-size: 1rem;
 }
 
 .page__textarea--minion:focus {
@@ -217,6 +218,10 @@ a {
 
 .page__textarea--yoda:focus {
   border: 1px solid #d5cfb6;
+}
+
+.page__textarea--groot:focus {
+  border: 1px solid #6a513b;
 }
 
 @media (min-width: 768px) {
@@ -236,6 +241,10 @@ a {
 
 .page__submit--yoda {
   background: #616640;
+}
+
+.page__submit--groot {
+  background: #6a513b;
 }
 
 @media (min-width: 768px) {

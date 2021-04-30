@@ -2,6 +2,7 @@ import './style/App.css';
 import {Link} from 'react-router-dom';
 import minion from './assets/minion.jpg'
 import yoda from './assets/yoda.jpg'
+import groot from './assets/groot.jpg'
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Link to={`/yoda`} className="main__character">
           <img src={yoda} alt="yoda" className="main__character-img" />
           <p className="main__character-name">Yoda</p>
+        </Link>
+        <Link to={`/groot`} className="main__character">
+          <img src={groot} alt="groot" className="main__character-img" />
+          <p className="main__character-name">Groot</p>
         </Link>
       </div>
     </div>
