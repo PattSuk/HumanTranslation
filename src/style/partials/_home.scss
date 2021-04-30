@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   &__character {
@@ -25,7 +25,7 @@
       width: 10rem;
       height: 10rem;
       @extend %circle-object;
-      margin: 0 2rem;
+      margin: 1rem 2rem;
     }
 
     &-name {
