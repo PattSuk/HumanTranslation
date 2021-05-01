@@ -14,10 +14,17 @@ function Minion(props) {
             fetch(`https://api.funtranslations.com/translate/minion.json?text=${text}`)
             .then(response => response.json())
             .then(json => setTranslated(json.contents.translated))
-            .catch((error) => console.log(error));
+            .catch((error) => handleError(error));
         }
 
-        //form.reset();
+    }
+
+    const handleError = (error) => {
+        console.log(error);
+        const ans = document.querySelector('.page__ans');
+        ans.classList.add('error-mes');
+        setTranslated(`Rate limit of 5 requests per hour exceeded, please try again later.`);
+
     }
 
     return (
